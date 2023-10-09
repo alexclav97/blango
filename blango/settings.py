@@ -163,6 +163,10 @@ class Dev(Configuration):
 
     DJANGO_ADMINS="Alexander Clavijo,aclavijo97@gmail.com"
 
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    ACCOUNT_ACTIVATION_DAYS = 7
+    REGISTRATION_OPEN = False
+    
     LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
